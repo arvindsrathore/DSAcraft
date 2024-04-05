@@ -160,7 +160,7 @@ int main()
                         cout << "Empty Rooms - ";
                         for (auto y : x.second.rooms)
                         {
-                            if (!y.occupied)
+                            if (!y.occupied && y.meeting_title != "no_title")
                             {
                                 y.putdetails();
                             }
